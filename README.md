@@ -8,3 +8,5 @@ The doc.theregion.beer site was originally configured on eridani by pointing to 
 Now, I have it kinda dockerized as long as the host has the path already
 
 After cloning to a new directory, might need to customize some paths
+
+Just clone and docker-compose up -d --build
