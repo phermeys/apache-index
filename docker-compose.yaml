@@ -1,0 +1,13 @@
+# docker compose
+version: '3'
+
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docs.theregion.beer
+    ports:
+      - "9017:80"
+    volumes:
+      -  /media/behemoth/docs.theregion.beer/:/mnt/smb
