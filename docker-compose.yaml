@@ -6,8 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: docs.theregion.beer
+    container_name: ${FQDN}
     ports:
-      - "9017:80"
+      - "${PORT}:80"
     volumes:
-      -  /media/behemoth/docs.theregion.beer/:/mnt/smb
+      -  ${SHARE}:/mnt/smb
