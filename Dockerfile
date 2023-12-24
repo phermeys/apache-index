@@ -9,9 +9,8 @@ RUN apt-get update && \
 # Create a directory to mount the SMB share
 RUN mkdir /mnt/smb
 
-# Copy your Apache configuration files, HTML, PHP, or other site content
+# Copy Apache configuration file
 COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
-#COPY index.html /var/www/html/
 
 # Expose Apache port
 EXPOSE 80
